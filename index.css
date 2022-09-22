@@ -4,6 +4,7 @@
     *{
         box-sizing: border-box;
     }
+
     body {
         font-family: sans-serif;
         margin: 0;
@@ -118,7 +119,7 @@
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("images/house-gym.jpg");
+        ,url("./images/house-gym\ \(2\).jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
