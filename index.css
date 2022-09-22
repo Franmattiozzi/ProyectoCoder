@@ -1,0 +1,382 @@
+@media (min-width:0px){
+
+
+    *{
+        box-sizing: border-box;
+    }
+    body {
+        font-family: sans-serif;
+        margin: 0;
+    }
+
+    h1{ font-size: 3.5em;}
+    h2{ font-size: 2.7em;}
+    h3{ font-size: 2em;}
+    p{ font-size: 1.25em;}
+    ul{ list-style: none;} 
+    li{ font-size: 1.25em;}
+
+    button{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 1px solid rgb(0, 0, 5);
+        color: rgb(0, 0, 0);
+        background-color: white;
+    }
+
+    button:hover{
+        background-color: rgba(177, 177, 177, 0.322);
+        color: white;
+        border: 5px;
+    }
+
+
+    .container{
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+    .logo{
+        margin: 0;
+        padding: 25px 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav a{
+        font-weight: 600;
+        padding-right: 10px;
+    }
+
+    #nuestros-productos {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+    
+    #nuestros-productos{
+        padding: 120px 0px;
+    }
+
+    #nuestros-productos h2 {
+        margin-top: 0;
+        font-size: 2em;
+    }
+
+    #nuestros-productos h3 {
+        margin-top: 0;
+        font-size: 1em;
+    }
+
+    #nuestros-productos p {
+        display: none;
+    }
+
+    #nuestros-productos .muestras {
+        justify-content: center;
+    }
+
+    #nuestros-productos .carta {
+        max-width: 100%;
+        max-height: 100%;
+        height: 300px;
+        width: 350px;
+    }
+
+
+
+    #nuestros-productos .carta {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 2px 2px 10px rgb(0 0 0 / 50%);
+        background-position: center;
+        background-size: 100% 10px;
+        background-repeat: no-repeat;
+        padding: 50px;
+        margin: 20px;
+        border-radius: 15px;
+    }
+
+    #hero{
+        margin-top: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 90vh;
+        color: white;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("images/house-gym.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #beneficios .container{
+        text-align: center;
+        padding: 150px 20px;
+    }
+
+    #beneficios li{
+        margin: 16px 10px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+
+    #beneficios li:hover{
+        font-size: 2em;
+    }
+
+    #final{
+        margin-top:  45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: linear-gradient(
+            2deg,
+            rgba(0, 0, 0, 0.76),
+            rgb(180, 179, 179)
+        )
+        , url("./Imagenes/press.jpg.jpg");
+        background-color: black;
+        color: white;
+        height: 80vh;
+    }
+
+    #final h2{
+        font-size: 9vw;
+    }
+
+    #final button{
+        font-size: 5vw;
+    }
+
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .pie-pagina{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .pie-pagina .grupo1{
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        max-width: 100%;
+        max-height: 10px;
+        margin-left: 5px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .pie-pagina .box p{
+        text-align: center;
+        font-size: 10px;
+        margin-right: 12px;
+        margin-top: 15px;
+    }
+
+
+    .pie-pagina .box h2{
+    display: none;
+    }
+
+
+}
+
+
+@media (min-width:720px){
+    header{
+        width: 100%;
+        margin: 0;
+    }
+
+    nav a:hover{
+        font-size: 1.12em;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header .nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+        animation-duration: 1.5s;
+        animation-name: slidein;
+    }
+
+    #hero button{
+        animation-duration: 1.5s;
+        animation-name: slideup;
+    }
+
+    #final h2{
+        font-size: 5vw;
+    }
+    
+    #final button{
+        font-size: 1vw;
+    }
+
+    #beneficios{
+        background-image: url("./images/pesas.jpg");
+        background-repeat: no-repeat;
+        background-size: 700px 420px;
+        background-position: 800px 140px;
+    }
+
+    #beneficios .container{
+        text-align: initial;
+    }
+
+    #beneficios ul{
+        margin-left: 20px;
+    }
+
+    #beneficios li{
+        font-size: 30px;
+        margin: 10px;
+        margin-bottom: 40px;
+    }
+
+    #nuestros-productos {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+    #nuestros-productos{
+        padding: 80px 120px;
+    }
+
+    #nuestros-productos h2 {
+        margin-top: 0;
+        font-size: 3.2em;
+        text-shadow: 2px 2px 10px rgb(131, 131, 131);
+    }
+
+    #nuestros-productos h3 {
+        margin-top: 10px;
+        font-size: 2em;
+    }
+
+    #nuestros-productos p{
+        display: flex;
+        margin-top: 30px;
+        font-size: 1.2em;
+    }
+
+    #nuestros-productos .muestras {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-productos .carta {
+        max-width: 100%;
+        max-height: 100%;
+        height: 900px;
+        width: 2500px;
+    }
+
+    #nuestros-productos .carta {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 2px 2px 10px rgb(0 0 0 / 50%);
+        background-position: center;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        padding: 80px;
+        margin: 20px;
+        border-radius: 15px;
+    }
+
+    #nuestros-productos .carta:hover{
+        box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.5);
+    }
+
+    .pie-pagina .grupo1{
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        max-width: 100%;
+        max-height: 50px;
+        margin-left: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 380px;
+    }
+
+
+    .pie-pagina .box p{
+        text-align: center;
+        text-align: center;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    .pie-pagina .box div img{
+        width: 120px;
+    }
+
+    .pie-pagina .box h2{
+        display: block;
+        color: black;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    #carouselExampleCaptions{
+        margin-bottom: 100px;
+    }
+
+    #articulo .container{
+        margin: 0 100px 0 100px;
+    }
+
+    @keyframes slidein {
+        0% {
+            margin-bottom: 100%;
+        }
+
+        100% {
+            margin-bottom: 0%;
+        }
+    }
+
+    @keyframes slideup {
+        0% {
+            margin-top: 100%;
+        }
+
+        100% {
+            margin-top: 0%;
+        }
+    }
+
+
+
+}
